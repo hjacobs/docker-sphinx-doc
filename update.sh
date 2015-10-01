@@ -2,9 +2,9 @@
 
 cd /app
 
-git clone $GITHUB_REPO content
+git clone $GIT_REPO content
 
-while true; do    
+while true; do
     cd /app/content
     git pull
     cd /app/content/${CONTENT_FOLDER}

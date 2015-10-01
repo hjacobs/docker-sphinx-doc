@@ -2,10 +2,13 @@
 Sphinx auto deploy
 ==================
 
+This appliance allows serving Sphinx documentation hosted on GIT.
+
 Use environment variables to select what to checkout and run. Content is updated via basic git pull every 45 seconds (no webhook magic for now).
 
 .. code-block:: yaml
 
+  APP_URL: "https://my-sphinx-doc.example.org/"
   GIT_SSH_KEY: "aws:kms:...."
   GIT_REPO: git@.....
   CONTENT_FOLDER: "compendium"
