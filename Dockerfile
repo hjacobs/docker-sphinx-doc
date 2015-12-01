@@ -2,7 +2,7 @@ FROM zalando/python:3.4.0-4
 
 RUN apt-get -y update && apt-get install -y git supervisor
 
-RUN pip3 install --upgrade sphinx sphinx_rtd_theme oauth2-proxy>=0.5 uwsgi
+RUN pip3 install --upgrade sphinx sphinx_rtd_theme oauth2-proxy>=1.0.8 uwsgi
 
 RUN touch /supervisord.log
 RUN chmod 666 /supervisord.log
