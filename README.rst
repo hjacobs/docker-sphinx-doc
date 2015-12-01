@@ -28,8 +28,8 @@ The current Docker image is available in Zalando's Open Source Docker registy:
 
 .. code-block:: bash
 
-    $ docker pull registry.opensource.zalan.do/stups/sphinx-doc:0.2
-    $ docker run -it -p 8080:8080 -e ... registry.opensource.zalan.do/stups/sphinx-doc:0.2
+    $ docker pull registry.opensource.zalan.do/stups/sphinx-doc:0.3
+    $ docker run -it -p 8080:8080 -e ... registry.opensource.zalan.do/stups/sphinx-doc:0.3
 
 Deployment
 ----------
