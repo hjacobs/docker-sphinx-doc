@@ -20,3 +20,5 @@ COPY ssh-conf /root/.ssh/config
 EXPOSE 8080
 
 CMD ["/app/run.sh"]
+
+COPY scm-source.json /
