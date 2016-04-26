@@ -1,8 +1,12 @@
-FROM zalando/python:3.4.0-4
+FROM registry.opensource.zalan.do/stups/python:3.5.1-17
 
-RUN apt-get -y update && apt-get install -y git supervisor
+RUN apt-get -y update \
+    && apt-get install -y --no-install-recommends python \
+    # make "python" point to Python 2.7 again (for supervisord)
+    && update-alternatives --install /usr/bin/python python /usr/bin/python2 9 \
+    && apt-get install -y --no-install-recommends git supervisor make
 
-RUN pip3 install --upgrade sphinx sphinx_rtd_theme oauth2-proxy>=1.0.9 uwsgi
+RUN pip3 install --upgrade sphinx sphinx_rtd_theme oauth2-proxy>=1.0.11 uwsgi
 
 RUN touch /supervisord.log
 RUN chmod 666 /supervisord.log
