@@ -4,7 +4,7 @@ RUN apt-get -y update \
     && apt-get install -y --no-install-recommends python \
     # make "python" point to Python 2.7 again (for supervisord)
     && update-alternatives --install /usr/bin/python python /usr/bin/python2 9 \
-    && apt-get install -y --no-install-recommends git supervisor make
+    && apt-get install -y --no-install-recommends git ssh-client supervisor make
 
 RUN pip3 install --upgrade sphinx sphinx_rtd_theme oauth2-proxy>=1.0.11 uwsgi
 
