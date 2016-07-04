@@ -1,4 +1,4 @@
-FROM registry.opensource.zalan.do/stups/python:3.5.1-21
+FROM registry.opensource.zalan.do/stups/python:3.5.1-23
 
 RUN apt-get -y update \
     && apt-get install -y --no-install-recommends python \
