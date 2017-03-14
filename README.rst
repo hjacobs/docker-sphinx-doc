@@ -24,7 +24,7 @@ Content is served via `Python OAuth2 Proxy`_ from
 Docker Image
 ------------
 
-The current Docker image is available in Zalando's Open Source Docker registy:
+The current Docker image is available in Zalando's Open Source Docker registry:
 
 .. code-block:: bash
 
